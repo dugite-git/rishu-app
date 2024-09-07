@@ -48,16 +48,20 @@ Dev Containerを使用して開発環境を構築します。
 
 1. `git clone https://github.com/ToYama170402/rishu-app.git`
 2. クローンしたレポジトリをVS Codeで開く
-3. コマンドパレット（`Ctrl+Shift+p`）から`Reopen in Container`を選択
-4. `cd rishu-app`でプロジェクトディレクトリに移動
-5. `yarn dev`で開発サーバーを起動
+3. `devcontainrer.json`の`service`のキーを編集
+   - フロントエンド開発の場合は`frontend`
+4. コマンドパレット（`Ctrl+Shift+p`）から`Reopen in Container`を選択
 
 `.vscode/launch.json`にデバッグ設定が記述されています。
 VS Codeのデバッグ機能を使用して、開発サーバーをデバッグできます。
 
+devcontainer内からGitが使えないので、Gitを操作するときはホストから操作してください。
+
 ## コントリビュート
 
 Pull Request、Issue、質問、提案など、どんな形でも歓迎します。
+
+開発に参加したい方は、Twitterの[@ToYamaSoujin](https://x.com/ToYamaSoujin)または、[toyamasoujinn@gmail.com](toyamasoujinn@gmail.com)までお気軽にご連絡ください。
 
 ## Special Thanks
 
@@ -67,5 +71,3 @@ Pull Request、Issue、質問、提案など、どんな形でも歓迎します
 ## ライセンス
 
 MIT License
-
-
